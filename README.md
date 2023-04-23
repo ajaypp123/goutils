@@ -2,14 +2,23 @@
 Utility Packages for Go
 
 
-- Create Package
-  - Create repository in github `packagename`
-  - Clone repo in github workspace
-  - setup go workspace
-  ```
-  $ go mod init github.com/uname/packagename
-  ```
+- Install Package
+```
+go get github.com/ajaypp123/goutils
+```
 
-- Export module
-  - create any folder inside package `mymodule`
-  - create go file in module and create function start with capital letter `Add`
+# Library
+
+## Collections
+
+1. LinkedList
+GetAtIndex(index int) interface{}
+GetFirst() interface{}
+GetLast() interface{}
+InsertAtBeginning(data interface{})
+InsertAtEnd(data interface{})
+InsertAtIndex(data interface{}, index int) error
+RemoveAtBeginning() error
+RemoveAtEnd() error
+RemoveAtIndex(index int) error
+
