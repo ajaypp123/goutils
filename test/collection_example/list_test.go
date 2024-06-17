@@ -1,16 +1,18 @@
-package main
+package collection_example
 
 import (
-	"fmt"
+	"testing"
 
 	"github.com/ajaypp123/goutils/collections"
 )
 
-func main() {
+func TestList(t *testing.T) {
 	li := collections.LinkedList{}
 
 	li.InsertAtEnd(5)
 
 	data := li.GetFirst().(int)
-	fmt.Println(data)
+	if data != 5 {
+		t.Errorf("Failed")
+	}
 }
